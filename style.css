@@ -15,11 +15,21 @@ body {
   margin: 0;
 }
 
+.cardPositioningContainer {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  width: calc(100% - 2rem);
+  height: calc(100% - 2rem);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .card {
   background: white;
-  margin: auto;
-  padding: 40px 70px;
-  max-width: 540px;
+  padding: 70px 40px;
+  max-width: 460px;
   box-sizing: border-box;
 }
 
@@ -37,4 +47,14 @@ body {
   position: absolute;
   top: 1rem;
   right: 1rem;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: inherit;
+  background: white;
+  border: 2px solid var(--blue-shadow);
+  border-radius: 5px;
+  padding: 4px 10px;
+  font-weight: bold;
+  font-size: 14px;
+  box-shadow: 2px 2px 2px 2px white;
 }
