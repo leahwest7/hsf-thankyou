@@ -16,7 +16,19 @@ body {
   margin: 0;
 }
 
+@keyframes zoomOut {
+  0% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
 .cardPositioningContainer {
+  animation: 2s zoomOut 0.2s ease backwards;
+  transition: transform .8s ease;
   position: absolute;
   top: 1rem;
   left: 1rem;
@@ -29,8 +41,10 @@ body {
   perspective: 1200px;
 }
 
+
 .topFold,
 .bottomFold {
+  transition: transform .8s ease;
   height: 120px;
   background: white;
   width: 100%;
@@ -39,7 +53,18 @@ body {
   box-sizing: border-box;
 }
 
+@keyframes topUnfold {
+  0% {
+    transform: rotateX(-75deg);
+  }
+
+  100% {
+    transform: rotateX(-25deg);
+  }
+}
+
 .topFold {
+  animation: 2s topUnfold 0.2s ease backwards;
   transform-origin: bottom center;
   transform-style: preserve-3d;
   transform: rotateX(-25deg);
@@ -47,11 +72,30 @@ body {
   background-color: var(--blue-midtone);
 }
 
+.topFold:hover {
+  transform: rotateX(-10deg);
+}
+
+@keyframes bottomUnfold {
+  0% {
+    transform: rotateX(85deg);
+  }
+
+  100% {
+    transform: rotateX(30deg);
+  }
+}
+
 .bottomFold {
+  animation: 2.5s bottomUnfold 0.1s ease backwards;
   transform-origin: top center;
   transform-style: preserve-3d;
   transform: rotateX(30deg);
   border-radius: 0 0 8px 8px;
+}
+
+.bottomFold:hover {
+  transform: rotateX(10deg);
 }
 
 .card {
