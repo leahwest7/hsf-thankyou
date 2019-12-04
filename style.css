@@ -27,8 +27,7 @@ body {
 }
 
 .cardPositioningContainer {
-  animation: 2s zoomOut 0.2s ease backwards;
-  transition: transform .8s ease;
+  animation: 4s zoomOut 0.1s ease backwards;
   position: absolute;
   top: 1rem;
   left: 1rem;
@@ -41,10 +40,9 @@ body {
   perspective: 1200px;
 }
 
-
 .topFold,
 .bottomFold {
-  transition: transform .8s ease;
+  transition: transform 0.8s ease;
   height: 120px;
   background: white;
   width: 100%;
@@ -101,7 +99,6 @@ body {
 .card {
   background-color: var(--blue-lightened-midtone);
   padding: 70px 40px;
-  height: 460px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -114,6 +111,7 @@ body {
 .card-message {
   font-size: 24px;
   line-height: 34px;
+  margin-bottom: 0.4em;
 }
 
 .card-signature {
@@ -167,6 +165,7 @@ body {
   top: 2vw;
   left: 2vw;
   width: 250px;
+  height: 250px;
 }
 
 .presents-2 {
@@ -174,6 +173,7 @@ body {
   bottom: 4vw;
   left: 18vw;
   width: 100px;
+  height: 100px;
 }
 
 .presents-3 {
@@ -181,4 +181,5 @@ body {
   right: 12vw;
   top: 35vh;
   width: 300px;
+  height: 300px;
 }

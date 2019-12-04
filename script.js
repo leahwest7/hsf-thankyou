@@ -1,4 +1,3 @@
 import "./buttonHover.js";
 import "./snowAnimation.js";
-
-console.log("running");
+import "./3DPresents.js";
