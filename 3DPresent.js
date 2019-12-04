@@ -8,13 +8,15 @@ const generatePresent = ({
 }) => {
   let isSpinning = true;
   const ribbonWidth = size / 7;
+  const randomBetween = (min, max) => Math.random() * (max - min) + min;
 
-  let present = new Zdog.Illustration({
+  const present = new Zdog.Illustration({
     element: selector,
     dragRotate: true,
     onDragStart: () => (isSpinning = false),
+    onDragEnd: () => (isSpinning = true),
     rotate: {
-      x: -9
+      x: Math.round(randomBetween(-4, 4))
     }
   });
 
@@ -26,7 +28,7 @@ const generatePresent = ({
     stroke: false,
     color: shadow,
     rightFace: highlight,
-    topFace: highlight,
+    topFace: highlight
   });
 
   // side ribbons

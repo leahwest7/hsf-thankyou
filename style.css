@@ -2,13 +2,6 @@ body {
   --blue-shadow: #2B272C;
   --blue-midtone: #9EB4F8;
   --blue-lightened-midtone: #DCE3F8;
-  --neon-blue-shadow: #2B1543;
-  --neon-blue-highlight: #4F33F3;
-  --neon-blue-midtone: #101987;
-  --red-midtone: #5B0F41;
-  --red-highlight: #8C1746;
-  --green-highlight: #329F4A;
-  --green-midtone: #18744B;
 
   background-color: var(--blue-shadow);
   color: var(--blue-shadow);
@@ -38,22 +31,25 @@ body {
   align-items: center;
   justify-content: center;
   perspective: 1200px;
+  z-index: 3;
+  pointer-events: none;
 }
 
 .topFold,
 .bottomFold {
-  transition: transform 0.8s ease;
-  height: 120px;
+  transition: all 0.8s ease;
+  height: 140px;
   background: white;
   width: 100%;
   max-width: 460px;
   border: 2px solid var(--blue-shadow);
   box-sizing: border-box;
+  pointer-events: auto;
 }
 
 @keyframes topUnfold {
   0% {
-    transform: rotateX(-75deg);
+    transform: rotateX(-160deg);
   }
 
   100% {
@@ -72,11 +68,12 @@ body {
 
 .topFold:hover {
   transform: rotateX(-10deg);
+  background-color: var(--blue-lightened-midtone);
 }
 
 @keyframes bottomUnfold {
   0% {
-    transform: rotateX(85deg);
+    transform: rotateX(160deg);
   }
 
   100% {
@@ -94,6 +91,7 @@ body {
 
 .bottomFold:hover {
   transform: rotateX(10deg);
+  background-color: var(--blue-lightened-midtone);
 }
 
 .card {
@@ -106,6 +104,7 @@ body {
   box-sizing: border-box;
   border: 2px solid var(--blue-shadow);
   border-width: 0 2px;
+  pointer-events: auto;
 }
 
 .card-message {
@@ -146,6 +145,7 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
+  z-index: 1;
 }
 
 .sparkleCanvas {
@@ -158,13 +158,13 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 1;
+  z-index: 2;
 }
 
 .presents-1 {
   position: absolute;
   top: 2vw;
-  left: 2vw;
+  left: 3vw;
 }
 
 .presents-2 {
@@ -175,6 +175,6 @@ body {
 
 .presents-3 {
   position: absolute;
-  right: 12vw;
+  right: 10vw;
   top: 35vh;
 }
