@@ -14,7 +14,7 @@ const boxShadow = (xOffset, yOffset) => {
   const shadow3X = clip(-12, 12, xBasis * 3);
   const shadow3Y = clip(-12, 12, yBasis * 3);
 
-  return `${shadow1X}px ${shadow1Y}px 0px var(--blue-midtone), ${shadow2X}px ${shadow2Y}px 0px var(--red-highlight), ${shadow3X}px ${shadow3Y}px 0px var(--green-highlight)`;
+  return `${shadow1X}px ${shadow1Y}px 0px #8C1746, ${shadow2X}px ${shadow2Y}px 0px #329F4A, ${shadow3X}px ${shadow3Y}px 0px #4F33F3`;
 };
 
 const listenAction = ({ clientX, clientY }) => {
