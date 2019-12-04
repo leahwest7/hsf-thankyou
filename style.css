@@ -158,14 +158,13 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
+  z-index: 1;
 }
 
 .presents-1 {
   position: absolute;
   top: 2vw;
   left: 2vw;
-  width: 250px;
-  height: 250px;
 }
 
 .presents-2 {
