@@ -109,3 +109,32 @@ body {
 .sparkleCanvas {
   pointer-events: none;
 }
+
+.presents {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.presents-1 {
+  position: absolute;
+  top: 2vw;
+  left: 2vw;
+  width: 250px;
+}
+
+.presents-2 {
+  position: absolute;
+  bottom: 4vw;
+  left: 18vw;
+  width: 100px;
+}
+
+.presents-3 {
+  position: absolute;
+  right: 12vw;
+  top: 35vh;
+  width: 300px;
+}
