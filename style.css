@@ -49,10 +49,12 @@ body {
 
 @keyframes topUnfold {
   0% {
+    background-color: var(--blue-lightened-midtone);
     transform: rotateX(-160deg);
   }
 
   100% {
+    background-color: #ffffff;
     transform: rotateX(-25deg);
   }
 }
@@ -63,20 +65,36 @@ body {
   transform-style: preserve-3d;
   transform: rotateX(-25deg);
   border-radius: 8px 8px 0 0;
-  background-color: var(--blue-midtone);
+  background-color: white;
 }
 
 .topFold:hover {
   transform: rotateX(-10deg);
+}
+
+.topFold:hover .topFold-front {
   background-color: var(--blue-lightened-midtone);
+}
+
+.topFold-front {
+  transition: all 0.8s ease;
+  backface-visibility: hidden;
+  background-color: var(--blue-midtone);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 @keyframes bottomUnfold {
   0% {
+    background-color: var(--blue-lightened-midtone);
     transform: rotateX(160deg);
   }
 
   100% {
+    background-color: var(--blue-midtone);
     transform: rotateX(30deg);
   }
 }
@@ -87,11 +105,26 @@ body {
   transform-style: preserve-3d;
   transform: rotateX(30deg);
   border-radius: 0 0 8px 8px;
+  background-color: var(--blue-midtone);
 }
 
 .bottomFold:hover {
   transform: rotateX(10deg);
+}
+
+.bottomFold:hover .bottomFold-front {
   background-color: var(--blue-lightened-midtone);
+}
+
+.bottomFold-front {
+  transition: all 0.8s ease;
+  backface-visibility: hidden;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .card {
@@ -137,6 +170,7 @@ body {
   padding: 4px 10px;
   font-weight: bold;
   font-size: 14px;
+  z-index: 3;
 }
 
 .sparkleCanvas {
