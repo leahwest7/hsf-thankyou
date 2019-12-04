@@ -61,19 +61,6 @@ frontWindow.copy({
 frontWindow.copy({
   translate: { x: -4, y: 3 }
 });
-// door
-new Zdog.Shape({
-  addTo: frontGroup,
-  path: [
-    { x: -2, y: 3 },
-    { x: -2, y: -1 },
-    { arc: [{ x: -2, y: -3 }, { x: 0, y: -3 }] },
-    { arc: [{ x: 2, y: -3 }, { x: 2, y: -1 }] },
-    { x: 2, y: 3 }
-  ],
-  translate: { x: 2, y: 4 },
-  color: eggplant
-});
 
 // backWall
 var backGroup = frontGroup.copyGraph({
