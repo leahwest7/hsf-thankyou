@@ -9,7 +9,7 @@ const garnet = "#C25";
 const eggplant = "#636";
 
 // enable fill, disable stroke for all defaults
-[Zdog.Rect, Zdog.Shape, Zdog.Ellipse].forEach(function(Item) {
+[Zdog.Rect, Zdog.Shape, Zdog.Ellipse].forEach(Item => {
   Item.defaults.fill = true;
   Item.defaults.stroke = false;
 });
@@ -23,9 +23,7 @@ var illo = new Zdog.Illustration({
   // stretch looks circular at 1/8 turn
   scale: { x: turnRatio, z: turnRatio },
   dragRotate: true,
-  onDragStart: function() {
-    isSpinning = false;
-  }
+  onDragStart: () => (isSpinning = false)
 });
 
 // ----- model ----- //
@@ -146,9 +144,9 @@ new Zdog.Rect({
 // ----- animate ----- //
 
 var ticker = 0;
-var cycleCount = 240;
+var cycleCount = 200;
 
-function animate() {
+const animate = () => {
   if (isSpinning) {
     var progress = ticker / cycleCount;
     var tween = Zdog.easeInOut(progress % 1, 3);
@@ -157,6 +155,6 @@ function animate() {
   }
   illo.updateRenderGraph();
   requestAnimationFrame(animate);
-}
+};
 
 animate();
