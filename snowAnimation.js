@@ -91,7 +91,7 @@ const drawFrame = () => {
           offsetCurrentFrame / (CYCLE_DURATION_IN_FRAMES * 0.05)
         );
 
-        const opacity = transition(0, .8, opacityProgress);
+        const opacity = transition(0, 0.8, opacityProgress);
         CTX.fillStyle = `hsla(${hue}, 36.5%, 37.6%, ${opacity})`;
         CTX.strokeStyle = `hsla(${hue}, 36.5%, 37.6%, ${opacity})`;
 

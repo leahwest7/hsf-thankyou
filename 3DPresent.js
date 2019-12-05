@@ -8,6 +8,7 @@ const generatePresent = ({
 }) => {
   let isSpinning = true;
   const ribbonWidth = size / 7;
+  const ribbonDepth = 2;
   const randomBetween = (min, max) => Math.random() * (max - min) + min;
 
   const present = new Zdog.Illustration({
@@ -34,7 +35,7 @@ const generatePresent = ({
   // side ribbons
   const ribbon = new Zdog.Box({
     addTo: mainBox,
-    width: 2,
+    width: ribbonDepth,
     height: size - 4,
     depth: ribbonWidth,
     stroke: 4,
@@ -53,7 +54,7 @@ const generatePresent = ({
 
   ribbon.copy({
     width: ribbonWidth,
-    depth: 2,
+    depth: ribbonDepth,
     translate: {
       z: size / 2
     }
@@ -61,7 +62,7 @@ const generatePresent = ({
 
   ribbon.copy({
     width: ribbonWidth,
-    depth: 2,
+    depth: ribbonDepth,
     translate: {
       z: -size / 2
     }
@@ -70,7 +71,7 @@ const generatePresent = ({
   // top ribbons
   ribbon.copy({
     width: size,
-    height: 2,
+    height: ribbonDepth,
     depth: ribbonWidth,
     color: ribbonHighlight,
     translate: {
@@ -80,7 +81,7 @@ const generatePresent = ({
 
   ribbon.copy({
     width: ribbonWidth,
-    height: 2,
+    height: ribbonDepth,
     depth: size,
     color: ribbonHighlight,
     translate: {
@@ -91,7 +92,7 @@ const generatePresent = ({
   // bottom ribbons
   ribbon.copy({
     width: size,
-    height: 2,
+    height: ribbonDepth,
     depth: ribbonWidth,
     translate: {
       y: size / 2
@@ -100,7 +101,7 @@ const generatePresent = ({
 
   ribbon.copy({
     width: ribbonWidth,
-    height: 2,
+    height: ribbonDepth,
     depth: size,
     translate: {
       y: size / 2
