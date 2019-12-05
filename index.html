@@ -1,42 +1,41 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <title>Happy New Year from Glitch</title>
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
+    <meta
+      name="description"
+      content="Thanks for being a part of our community in 2019."
+    />
+    <title>Happy New Year from Glitch</title>
     <link rel="stylesheet" href="/style.css" />
+    <link rel="preload" href="/script.js" as="script" />
   </head>
   <body>
-    <canvas class="sparkleCanvas"></canvas>
-
-    <div class="presents">
-      <canvas class="presents-1" width="250" height="250"></canvas>
-      <canvas class="presents-2" width="100" height="100"></canvas>
-      <canvas class="presents-3" width="300" height="300"></canvas>
-    </div>
-
     <div class="cardPositioningContainer">
-      <div class="topFold">
+      <div class="topFold" aria-hidden="true">
         <div class="topFold-front"></div>
       </div>
       <div class="card">
         <div class="card-message">
-          <p>
+          <h1>
             Thanks for being a part of our community in 2019.
-          </p>
+          </h1>
           <p>
             We can't wait to see what we create together in 2020!
           </p>
         </div>
         <div class="card-signature">
           <img
+            alt="Glitch logo"
             src="https://cdn.glitch.com/4647233c-b193-47ac-9479-2e80e80c9951%2Fnightfish.svg?v=1575410607741"
           />
           From the Glitch team
         </div>
       </div>
-      <div class="bottomFold">
+      <div class="bottomFold" aria-hidden="true">
         <div class="bottomFold-front"></div>
       </div>
 
@@ -48,7 +47,33 @@
       </a>
     </div>
 
+    <canvas
+      class="sparkleCanvas"
+      aria-label="An animation of snow falling"
+    ></canvas>
+
+    <div class="presents">
+      <canvas
+        class="presents-1"
+        width="250"
+        height="250"
+        aria-label="A 3D, red floating present"
+      ></canvas>
+      <canvas
+        class="presents-2"
+        width="100"
+        height="100"
+        aria-label="A 3D, green floating present"
+      ></canvas>
+      <canvas
+        class="presents-3"
+        width="300"
+        height="300"
+        aria-label="A 3D, blue floating present"
+      ></canvas>
+    </div>
+
     <script src="https://unpkg.com/zdog@1.1.1/dist/zdog.dist.min.js"></script>
-    <script src="/script.js" type="module"></script>
+    <script src="/script.js" type="module" defer></script>
   </body>
 </html>

@@ -9,15 +9,13 @@ body {
   margin: 0;
 }
 
-@media (max-width: 600px) {
-  @keyframes zoomOut {
-    0% {
-      transform: scale(1.1);
-    }
+@keyframes zoomOut {
+  0% {
+    transform: scale(1.1);
+  }
 
-    100% {
-      transform: scale(1);
-    }
+  100% {
+    transform: scale(1);
   }
 }
 
@@ -170,6 +168,11 @@ body {
   font-size: 24px;
   line-height: 34px;
   margin-bottom: 0.4em;
+}
+
+.card-message h1 {
+  font-size: inherit;
+  font-weight: inherit;
 }
 
 @media (max-width: 600px) {
