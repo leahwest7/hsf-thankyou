@@ -70,7 +70,7 @@ body {
   }
 
   100% {
-    background-color: #ffffff;
+    background-color: white;
     transform: rotateX(-25deg);
   }
 }
