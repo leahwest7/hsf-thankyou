@@ -1,4 +1,6 @@
 body {
+background-image: url(https://cdn.glitch.com/fef41ef6-6588-48a2-bc51-98ad14b83c93%2Fflag%20gif.gif?v=1593306635783);
+  
   --blue-shadow: #2B272C;
   --blue-midtone: #cc3300;
   --blue-lightened-midtone: #000066;
@@ -7,7 +9,7 @@ body {
 }
 
 @keyframes zoomOut {
-  0% {
+  5% {
     transform: scale(1.1);
   }
 
