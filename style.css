@@ -7,6 +7,7 @@ body {
   color: var(--blue-shadow);
   font-family: Menlo, monospace;
   margin: 0;
+  background-image: url"https://cdn.glitch.com/fef41ef6-6588-48a2-bc51-98ad14b83c93%2Fflag%20gif.gif?v=1593306635783"
 }
 
 @keyframes zoomOut {
@@ -20,7 +21,7 @@ body {
 }
 
 .cardPositioningContainer {
-  animation: 4s zoomOut 0.1s ease backwards;
+  animation: 7s zoomOut 0.1s ease backwards;
   position: absolute;
   top: 1rem;
   left: 1rem;
@@ -46,7 +47,7 @@ body {
 
 .topFold,
 .bottomFold {
-  transition: all 0.8s ease;
+  transition: all 1.0s ease;
   height: 140px;
   background: white;
   width: 100%;
@@ -165,9 +166,10 @@ body {
 }
 
 .card-message {
-  font-size: 24px;
+  font-size: 26px;
   line-height: 34px;
   margin-bottom: 0.4em;
+  font-family: 'Raleway', sans-serif;
 }
 
 .card-message h1 {
@@ -193,18 +195,7 @@ body {
   margin-right: 1rem;
 }
 
-.button {
-  font-family: sans-serif;
-  text-decoration: none;
-  color: inherit;
-  background: white;
-  border: 2px solid var(--blue-shadow);
-  border-radius: 5px;
-  padding: 4px 10px;
-  font-weight: bold;
-  font-size: 14px;
-  margin: 4rem 0;
-  pointer-events: auto;
+
 }
 
 .sparkleCanvas {
@@ -246,3 +237,4 @@ body {
   right: 10vw;
   top: 35vh;
 }
+
