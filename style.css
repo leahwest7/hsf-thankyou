@@ -1,9 +1,9 @@
 body {
   --blue-shadow: #2B272C;
-  --blue-midtone: red;
+  --blue-midtone: #cc3300;
   --blue-lightened-midtone: #000066;
   margin: 0;
-  background-image: url "https://cdn.glitch.com/fef41ef6-6588-48a2-bc51-98ad14b83c93%2Fflag%20gif.gif?v=1593306635783"
+  
 }
 
 @keyframes zoomOut {
@@ -133,13 +133,19 @@ body {
 .bottomFold-front {
   transition: all 0.8s ease;
   backface-visibility: hidden;
-  background-color: red;
+  background-color: #cc3300;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   border-radius: 0 0 8px 8px;
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-family: 'Crimson Text', serif;
+  font-size: 20px;
+  
 }
 
 .card {
@@ -174,7 +180,7 @@ body {
   font-weight: inherit;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   .card-message {
     font-size: 24px;
     line-height: 30px;
@@ -196,5 +202,5 @@ body {
 
 
 
-#flag-gif {display: flex; align-items: center; justify-content: center;}
+.flag-gif {display: flex;  justify-content: center;}
 
