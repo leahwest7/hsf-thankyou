@@ -1,7 +1,7 @@
 body {
   --blue-shadow: #2B272C;
-  --blue-midtone: #9EB4F8;
-  --blue-lightened-midtone: #DCE3F8;
+  --blue-midtone: red;
+  --blue-lightened-midtone: #000066;
   margin: 0;
   background-image: url "https://cdn.glitch.com/fef41ef6-6588-48a2-bc51-98ad14b83c93%2Fflag%20gif.gif?v=1593306635783"
 }
@@ -133,7 +133,7 @@ body {
 .bottomFold-front {
   transition: all 0.8s ease;
   backface-visibility: hidden;
-  background-color: white;
+  background-color: red;
   position: absolute;
   top: 0;
   left: 0;
@@ -143,7 +143,7 @@ body {
 }
 
 .card {
-  background-color: var(--blue-lightened-midtone);
+  background-color: #000066;
   padding: 70px 40px;
   display: flex;
   flex-direction: column;
@@ -166,6 +166,7 @@ body {
   line-height: 34px;
   margin-bottom: 0.4em;
   font-family: 'Crimson Text', serif;
+  color: white;
 }
 
 .card-message h1 {
@@ -176,7 +177,7 @@ body {
 @media (max-width: 600px) {
   .card-message {
     font-size: 24px;
-    line-height: 24px;
+    line-height: 30px;
   }
 }
 
@@ -192,18 +193,8 @@ body {
 }
 
 
-}
 
-.sparkleCanvas {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 1;
-}
 
-.sparkleCanvas {
-  pointer-events: none;
-}
+
+#flag-gif {display: flex; align-items: center; justify-content: center;}
 
