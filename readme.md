@@ -1,4 +1,4 @@
-# Happy New Year from Glitch!
+# Thank You the HSF Community!
 
 Remix this app to make your own card.
 
