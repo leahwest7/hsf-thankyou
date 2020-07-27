@@ -169,6 +169,7 @@ body {
   border: 2px solid var(--blue-shadow);
   border-width: 0 2px;
   pointer-events: auto;
+  max-height: 560px;
 }
 
 @media (max-width: 600px) {
