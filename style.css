@@ -52,7 +52,7 @@ body {
   border: 2px solid var(--blue-shadow);
   box-sizing: border-box;
   pointer-events: auto;
-  min-height: 150px;
+  min-height: 190px;
 }
 
 @media (max-width: 600px) {
@@ -165,7 +165,7 @@ body {
   border: 2px solid var(--blue-shadow);
   border-width: 0 2px;
   pointer-events: auto;
-  max-height: 600px;
+  max-height: 1100px;
 }
 
 @media (max-width: 600px) {
