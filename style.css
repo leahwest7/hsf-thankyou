@@ -1,7 +1,7 @@
 body {
   background-image: url(https://cdn.glitch.com/d71cc0ec-0902-4911-be7e-0f55c5d0b21c%2Fhsf-logo-tagline-en.png?v=1595824755373);
 
-  --blue-shadow: #2B272C;
+  --blue-shadow: #2b272c;
   --blue-midtone: #cc3300;
   --blue-lightened-midtone: #000066;
   margin: 0;
@@ -45,13 +45,14 @@ body {
 .topFold,
 .bottomFold {
   transition: all 1s ease;
-  height: 140px;
-  
+  height: 150px;
+
   width: 100%;
   max-width: 560px;
   border: 2px solid var(--blue-shadow);
   box-sizing: border-box;
   pointer-events: auto;
+  min-height: 150px;
 }
 
 @media (max-width: 600px) {
@@ -79,11 +80,10 @@ body {
   transform-style: preserve-3d;
   transform: rotateX(-25deg);
   border-radius: 8px 8px 0 0;
-  
 }
 
 .topFold-front {
-  transition: all 1.0s ease;
+  transition: all 1s ease;
   backface-visibility: hidden;
   background-color: var(--blue-midtone);
   position: absolute;
@@ -96,10 +96,7 @@ body {
   font-family: "Crimson Text", serif;
   font-size: 30px;
   text-align: center;
-  display:flex;
-  
-  
-  
+  display: flex;
 }
 
 .topFold:hover {
@@ -109,8 +106,6 @@ body {
 .topFold:hover .topFold-front {
   background-color: var(--blue-lightened-midtone);
 }
-
-
 
 @keyframes bottomUnfold {
   0% {
@@ -142,7 +137,7 @@ body {
 }
 
 .bottomFold-front {
-  transition: all 1.0s ease;
+  transition: all 1s ease;
   backface-visibility: hidden;
   background-color: #cc3300;
   position: absolute;
@@ -157,7 +152,6 @@ body {
   font-family: "Crimson Text", serif;
   font-size: 28px;
   text-align: center;
-  
 }
 
 .card {
