@@ -82,16 +82,8 @@ body {
   
 }
 
-.topFold:hover {
-  transform: rotateX(-10deg);
-}
-
-.topFold:hover .topFold-front {
-  background-color: var(--blue-lightened-midtone);
-}
-
 .topFold-front {
-  transition: all 0.8s ease;
+  transition: all 1.0s ease;
   backface-visibility: hidden;
   background-color: var(--blue-midtone);
   position: absolute;
@@ -109,6 +101,16 @@ body {
   
   
 }
+
+.topFold:hover {
+  transform: rotateX(-10deg);
+}
+
+.topFold:hover .topFold-front {
+  background-color: var(--blue-lightened-midtone);
+}
+
+
 
 @keyframes bottomUnfold {
   0% {
@@ -140,7 +142,7 @@ body {
 }
 
 .bottomFold-front {
-  transition: all 0.8s ease;
+  transition: all 1.0s ease;
   backface-visibility: hidden;
   background-color: #cc3300;
   position: absolute;
@@ -160,7 +162,7 @@ body {
 
 .card {
   background-color: #000066;
-  padding: 70px 40px;
+  padding: 40px 40px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -169,7 +171,7 @@ body {
   border: 2px solid var(--blue-shadow);
   border-width: 0 2px;
   pointer-events: auto;
-  max-height: 560px;
+  max-height: 600px;
 }
 
 @media (max-width: 600px) {
